@@ -33,6 +33,11 @@ To use this script, run it from the command line with the desired action and opt
 - `--volume`: Specify the volume for listing or creating snapshots (default is `/`).
 - `--id`: Specify the snapshot identifier for the delete action.
 
+## Important Notes
+Running some of these actions may require administrative privileges. Use sudo if necessary.
+Be careful when deleting snapshots, as this cannot be undone.
+Ensure you understand the implications of mounting the root volume as writable, especially in system locations
+
 ### Examples
 
 List all snapshots for the root volume:
@@ -42,8 +47,3 @@ python snapshot_manager.py create --volume /
 python snapshot_manager.py delete --id <snapshot_id>
 python snapshot_manager.py get-root-vol
 python snapshot_manager.py mount-root-vol
-
-## Important Notes
-Running some of these actions may require administrative privileges. Use sudo if necessary.
-Be careful when deleting snapshots, as this cannot be undone.
-Ensure you understand the implications of mounting the root volume as writable, especially in system locations
