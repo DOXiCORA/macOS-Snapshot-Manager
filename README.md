@@ -43,7 +43,7 @@ python snapshot_manager.py delete --id <snapshot_id>
 python snapshot_manager.py get-root-vol
 python snapshot_manager.py mount-root-vol
 
-### Important Notes
+## Important Notes
 Running some of these actions may require administrative privileges. Use sudo if necessary.
 Be careful when deleting snapshots, as this cannot be undone.
 Ensure you understand the implications of mounting the root volume as writable, especially in system locations
